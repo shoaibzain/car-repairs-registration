@@ -1,0 +1,433 @@
+
+/* Popup container */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+    transition: left 0.3s ease;
+    z-index: 99;
+}
+
+/* Show popup */
+.popup.show {
+    left: 0;
+}
+
+/* Popup content */
+.popup-content {
+    padding: 40px 60px;
+    width: 80%;
+    height: auto;
+    position: relative;
+    display: block;
+}
+
+/* Close button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 45px;
+    cursor: pointer;
+}
+
+.logopopup,
+.popup-content .heading {
+    text-align: center;
+}
+
+.popup-content .heading {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.1;
+    color: #28bcfb;
+    margin: 0px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Form Style */
+.ff-default .ff-el-input--label label {
+    font-family: Montserrat, sans-serif;
+}
+
+.popup-content .fluentform-step .ff-el-group .ff-el-form-control {
+    background-color: #fafafa;
+    border-color: #fafafa;
+    font-weight: 600;
+    color: #b8b8b8;
+    transition: all 0.5s ease;
+    border-radius: 0px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.popup-content .fluentform-step .ff-el-group .ff-el-form-control::placeholder {
+    color: #b8b8b8;
+}
+
+.popup-content .fluentform-step .ff-el-group .ff-el-form-control::-ms-input-placeholder {
+    color: #b8b8b8;
+}
+
+.popup-content .fluentform-step .ff-el-group .ff-el-input--label {
+    margin-bottom: 10px;
+}
+
+.popup-content .fluentform-step .ff-el-group.car_registration_result {
+    margin-top: -40px;
+}
+
+.popup-content .fluentform-step .ff-el-group {
+    margin-bottom: 40px;
+}
+
+#postcode-suggestions {
+    list-style: none;
+    background-color: white;
+    box-shadow: 0px 0px 4px #0000001c;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 20px;
+    max-height: 200px;
+    overflow: auto;
+}
+
+#postcode-suggestions li {
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: all 0.5s ease;
+        cursor: pointer;
+}
+
+#postcode-suggestions li:hover {
+    background-color: #28bcfb;
+}
+
+.car_registration_result {
+    padding-top: 0px !important;
+}
+
+.popup-content .fluentform-step .ff-el-group .ff-el-form-check {
+    text-align: center;
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background: #FAFAFA;
+    border: 1px solid #ECF1F4;
+    padding: 16px 10px !important;
+    border-radius: 10px;
+    width: 30% !important;
+}
+
+.popup-content .fluentform-step .ff-el-group .ff-el-form-check label.ff-el-image-input-src {
+    width: 100%;
+    height: 84px;
+    margin-bottom: 14px;
+    background-size: 60px;
+}
+
+.popup-content .fluentform-step .ff-el-group label.ff-el-form-check-label {
+    width: 100%;
+    font-weight: 500;
+}
+
+.popup-content .fluentform-step .ff-el-group .ff_el_checkable_photo_holders {
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content: space-between;*/
+}
+
+.popup-content .fluentform-step .ff-el-group label.ff-el-form-check-label input {
+    opacity: 0;
+    margin-left: -13px;
+}
+
+.logopopup img.u-logo-image {
+    width: 200px;
+}
+
+.popup-content .fluentform-step .ff-el-group .ff-el-form-check.ff_item_selected {
+    background-color: #010101;
+}
+
+.popup-content .fluentform-step .ff-el-group .ff-el-form-check.ff_item_selected label.ff-el-form-check-label {
+    color: #fff;
+}
+
+.popup-content .fluentform-step .ff-el-group .ff-el-form-control:focus {
+    border-color: #0050ec;
+}
+
+.car_registration .ff-el-input--content {
+    position: relative;
+}
+
+.car_registration .ff-el-input--content:after {
+    content: '';
+    position: absolute;
+    width: 43px;
+    height: 100%;
+    right: 0px;
+    top: 0px;
+    background-image: url(https://mandgcarrepair.co.uk/wp-content/uploads/2024/09/1485-1.gif);
+    background-repeat: no-repeat;
+    background-position: 6px 8px;
+    background-size: 30px;
+    opacity: 0;
+}
+
+.car_registration .ff-el-input--content.loading:after {
+    opacity: 1;
+}
+
+.registration_result {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.registration_result img {
+    width: 48px;
+    margin-right: 20px;
+}
+
+.registration_result div#registration_result_title span {
+    font-weight: bold;
+    font-size: 20px;
+    color: #4A4F68;
+}
+
+#no_car_message {
+    font-size: 15px;
+    font-weight: 500;
+    color: #fe4a49;
+}
+
+.popup-content .fluentform-step .ff-el-group .ff-section_break_desk h3 {
+    margin-top: 0px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.ff-section_break_desk p:nth-child(2) {
+    margin: 0px;
+}
+.popup-content .fluentform-step .ff-el-group.ff_list_3col .ff_el_checkable_photo_holders {
+    justify-content: space-between;
+}
+.popup-content .fluentform-step .servicing.ff_list_buttons .ff-el-form-check {
+    /*width: 100% !important;*/
+    padding: 0px !important;
+    text-align: left !important;
+    margin-right: 10px;
+}
+
+.popup-content .fluentform-step .servicing.ff_list_buttons .ff-el-form-check label.ff-el-image-input-src {
+    display: none;
+}
+
+.popup-content .fluentform-step .servicing.ff_list_buttons .ff-el-form-check label.ff-el-form-check-label span {
+    text-align: left;
+    font-weight: 500;
+    padding: 20px;
+}
+
+.popup-content .fluentform-step .servicing.ff_list_buttons .ff-el-form-check.ff_item_selected label.ff-el-form-check-label span {
+    background-color: #28bcfb;
+    border-color: #28bcfb !important;
+}
+
+.popup-content .fluentform-step .ff-t-container,
+.popup-content .fluentform-step .step-nav.ff_step_nav_last {
+    width: 60%;
+    margin: auto;
+}
+
+.popup-content .fluentform-step:last-child .ff-step-t-container {
+    width: 60%;
+    margin: auto;
+}
+
+.popup-content .fluentform-step button.ff-btn.ff-btn-submit {
+    background-color: #28bcfb !important;
+}
+
+.popup-content .fluentform-step:last-child .ff-field_container .ff-t-container {
+    width: 100%;
+}
+
+.popup-content .iti__flag-container {
+    cursor: pointer;
+    opacity: 0 !important;
+    display: none !important;
+}
+
+.popup-content .iti.iti--allow-dropdown input {
+    padding-left: 20px;
+}
+
+.popup-content .fluentform-step:last-child .ff-el-section-title {
+    font-size: 20px;
+}
+
+.popup-content .fluentform-step:last-child .ff-section_break_desk {
+    margin-bottom: 20px;
+}
+
+.ff-el-group.ff-el-form-hide_label.hide {
+    display: none;
+}
+
+.popup-content button.ff-btn {
+    background-color: transparent !important;
+    color: #000 !important;
+    font-weight: bold !important;
+    text-transform: uppercase;
+}
+
+.result_img {
+    display: flex;
+    align-items: center;
+}
+
+.result_img img {
+    width: 50px;
+    margin-right: 20px;
+}
+
+.result_details {
+    padding: 20px;
+    position: relative;
+    border-radius: 9px;
+    background-color: rgba(241, 241, 242, 0.51);
+}
+
+.result_car_details span {
+    font-weight: bold;
+    font-size: 20px;
+    color: #4A4F68;
+}
+
+.ff-message-success {
+    border: none !important;
+    box-shadow: none !important;
+    text-align: center;
+}
+
+.registration_home .ff-el-form-control {
+    background-color: #ffffff;
+    font-weight: 600;
+    color: #000000;
+    transition: all 0.5s ease;
+    border-radius: 0px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: -apple-system, "system-ui", Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+    line-height: 1;
+    margin-bottom: 0;
+    padding: 11px 15px;
+    display: block;
+    border: 3px solid #0050ec;
+}
+
+.registration_home form#quoteForm {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.registration_home button {
+    background-color: #0050ec;
+    color: #fff;
+    padding: 16px 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.registrationquoteForm_success {
+    display: none;
+    color: red;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 600px) {
+    .registration_home .ff-el-form-control {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .registration_home button {
+        width: 100%;
+        padding: 10px 28px;
+    }
+    .popup-content {
+        padding: 20px 0px;
+        width: 86%;
+    }
+
+    .popup-content .fluentform-step .ff-el-group.ff-el-section-break h3 {
+        margin-top: 0px !important;
+    }
+
+    .popup-content .fluentform-step .ff-t-container,
+    .popup-content .fluentform-step .step-nav.ff_step_nav_last,
+    .popup-content .fluentform-step:last-child .ff-step-t-container {
+        width: 100%;
+    }
+
+    .logopopup img.u-logo-image {
+        width: 136px;
+    }
+
+    .popup-content .fluentform-step .ff-el-group.ff-el-section-break img {
+        width: 46px;
+    }
+
+    .popup-content .fluentform-step .ff-el-group.ff-el-section-break p {
+        margin: 10px 0px !important;
+    }
+
+    .popup-content .fluentform-step:last-child .ff-el-group.ff-el-section-break {
+        margin-top: 30px;
+    }
+
+    .popup-content .heading {
+        font-size: 1.3rem;
+    }
+
+    .popup-content .fluentform-step .ff-el-group .ff-el-form-control {
+        font-size: 14px;
+    }
+
+    .popup-content .fluentform-step .ff-el-group {
+        margin-bottom: 20px;
+    }
+
+
+    .popup-content .fluentform-step .ff-el-group .ff-el-form-check {
+        width: 43% !important;
+    }
+
+    .popup-content .fluentform-step .ff-el-group .ff_el_checkable_photo_holders {
+        justify-content: center;
+    }
+
+    .car_registration .ff-el-input--content:after {
+        background-size: 26px;
+    }
+
+    .popup-content .fluentform-step .ff-el-group.car_registration_result {
+        margin-top: -20px;
+    }
+}
